@@ -15,4 +15,29 @@ module.exports = {
     filename: "[name].bundle.js",
     // filename: "bundle.js",
   },
+
+  module: {
+    rules: [
+      {
+        test: /\.scss$/,
+        use: ["style-loader", "css-loader", "sass-loader"],
+      },
+      //   {
+      //     test: /\.js$/,
+      //     exclude: /node_modules/,
+      //     use: {
+      //       loader: "babel-loader",
+      //       options: {
+      //         presets: ["@babel/preset-env"],
+      //       },
+      //     },
+      //   },
+    ],
+  },
+  //   devServer: {
+  //     contentBase: path.join(__dirname, "public"),
+  //     port: 3000,
+  //     hot: true,
+  //     historyApiFallback: true,
+  //   },
 };

@@ -1,0 +1,12 @@
+:root {
+  --accent: tomato;
+}
+
+h1 {
+  font-size: 2em;
+  transition: 0.3s;
+  &:hover {
+    cursor: pointer;
+    color: var(--accent);
+  }
+}
